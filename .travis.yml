@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "20.18.0" # Puedes ajustar la versión de Node.js según tu proyecto
+  - "16" # Puedes ajustar la versión de Node.js según tu proyecto
 
 # Instalar las dependencias
 install:
