@@ -1,0 +1,30 @@
+language: node_js
+node_js:
+  - "20.18.0" # Puedes ajustar la versión de Node.js según tu proyecto
+
+# Instalar las dependencias
+install:
+  - npm install
+
+# Comando para ejecutar pruebas
+script:
+  - npm test
+
+# Configurar el cache para acelerar las compilaciones
+cache:
+  directories:
+    - node_modules
+
+# Notificaciones (opcional)
+notifications:
+  email:
+    recipients:
+      - carmartinez411@gmail.com
+    on_success: always
+    on_failure: always
+
+# Configuración adicional (opcional, para despliegues)
+# deploy:
+#   provider: heroku
+#   api_key: $HEROKU_API_KEY
+#   app: nombre-de-tu-app-en-heroku
