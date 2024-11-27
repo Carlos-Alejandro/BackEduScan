@@ -6,10 +6,6 @@ node_js:
 install:
   - npm install
 
-# Comando para ejecutar pruebas
-script:
-  - npm test
-
 # Configurar el cache para acelerar las compilaciones
 cache:
   directories:
